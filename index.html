@@ -1,0 +1,138 @@
+<!---
+I will be using this video as a guide to help me learn HTML/CSS
+https://www.youtube.com/watch?v=O7WbVj5apxU
+
+--->
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Glass Learning Website Demo with HTML/CSS</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+
+  <!--- Font Awesome --->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+  </head>
+  <body>
+
+    <main>
+      <section class="glass">
+
+        <div class="dashboard">
+
+        <div class="user">
+          <img class="user-img" src="./images/avater.PNG" alt="This is what I look like online">
+          <h3>Andrew BingoMaster</h3>
+          <p>Pro Member</p>
+
+        <div class="links">
+          <div class="link">
+            <a href="https://www.twitch.tv/samuraiderb">
+            <img class="link-img" src="./images/twitch.PNG" alt="">
+            <h2>Streams</h2> </a>
+
+          </div>
+          <div class="link">
+            <a href="https://www.youtube.com/channel/UCyemsNg4xl0aSv8KCrI_c8g">
+            <img class="link-img" src="./images/youtube2.PNG" alt="">
+            <h2>Youtube</h2> </a>
+
+          </div>
+          <div class="link">
+
+            <a href="https://github.com/antdinodev/">
+            <img class="link-img" src="./images/github2.PNG" alt="">
+            <h2>GitHub</h2> </a>
+
+          </div>
+          <div class="link">
+            <i class="icon-s fas fa-newspaper fa-3x"></i>
+            <h2>New</h2>
+
+          </div>
+          <div class="link">
+            <i class="icon-s fas fa-book fa-3x"></i>
+            <h2>Library</h2>
+
+          </div>
+
+
+
+          </div>
+          </div>
+
+          <div class="pro">
+
+          <img class="link-img" src="./images/controller.PNG" alt="">
+            <h2>Follow Me!</h1>
+
+        </div>
+        </div>
+
+        <div class="games">
+          <div class="status">
+            <h1>Active Games </h1>
+            <input type="text" />
+            </div>
+
+            <div class="cards">
+              <!--- You can refactor the cards into a jinja template and make it reusuable
+                -->
+              <div class="card">
+                <img class="card-img" src="./images/genshin.PNG" alt="">
+
+                <div class="card-info">
+                  <h2>Genshin Impact</h2>
+                  <p>PC Version</p>
+                  <div class="progress"></div>
+
+                </div>
+
+                <h2 class="percentage"> 60% </h2>
+              </div>
+              <!--- You can refactor the cards into a jinja template and make it reusuable
+                -->
+              <div class="card">
+                <img class="card-img" src="./images/league.PNG" alt="">
+
+                <div class="card-info">
+                  <h2>League of Legends</h2>
+                  <p>PC Version</p>
+                  <div class="progress"></div>
+
+                </div>
+
+                <h2 class="percentage"> 99% </h2>
+              </div>
+              <!--- You can refactor the cards into a jinja template and make it reusuable
+                -->
+              <div class="card">
+                <img class="card-img" src="./images/runescape.PNG" alt="">
+
+                <div class="card-info">
+                  <h2>Runescape <p>3</h2>
+                  <p>PC Version</p>
+                  <div class="progress"></div>
+
+                </div>
+
+                <h2 class="percentage"> 99% </h2>
+              </div>
+        </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="circle1"> </div>
+    <div class="circle2"> </div>
+
+
+  </body>
+</html>
