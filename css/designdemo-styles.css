@@ -25,6 +25,16 @@ body {
   font-family: PopLight;
 }
 
+
+.portfolio {
+  color: white;
+  background: radial-gradient(rgba(153,155,100,1) , rgba(11,16,35,1));
+
+}
+
+a {
+  color: white;
+}
 a:visited {
   color: red
 }
@@ -32,12 +42,6 @@ a:visited {
 a:hover {
   background-color: white;
   color: yellow;
-}
-
-.portfolio {
-  color: white;
-  background: radial-gradient(rgba(153,155,100,1) , rgba(11,16,35,1));
-
 }
 
 
