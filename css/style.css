@@ -1,9 +1,8 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 
 main {
   font-family: "Poppins", sans-serif;
@@ -14,29 +13,29 @@ main {
   justify-content: center;
 }
 
+body {
+  color: black;
+  font-weight: 900;
+}
 
-h1{
-
+h1 {
   color: #426696;
   font-weight: 600;
   font-size: 3rem;
   opacity: 0.8;
 }
 
-h2,p {
+h2, p {
   color: #073b4a;
   font-weight: 800;
   opacity: 0.9;
 }
 
-h3{
-
+h3 {
   color: #426696;
   font-weight: 600;
   opacity: 0.8;
 }
-
-
 
 /*
 linear gradient docs
@@ -48,16 +47,13 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient()
   background: white;
   min-height: 80vh;
   width: 60%;
-  background: linear-gradient(
-    to bottom right,
-    rgba(255,255,255,0.7),
-    rgba(255,255,255,0.3)
-    );
-    border-radius: 2rem;
-    z-index: 2;
-    backdrop-filter: blur(2rem);
-    display: flex;
-
+  background: linear-gradient(to bottom right,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3));
+  border-radius: 2rem;
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+  display: flex;
 }
 
 .dashboard {
@@ -66,63 +62,53 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient()
   justify-content: space-evenly;
   flex: 1;
   border-radius: 1rem;
-
 }
 
-
-.circle1,.circle2{
+.circle1, .circle2 {
   background: white;
-  background: linear-gradient(
-    to right bottom,
-    rgba(255,255,255,1),
-    rgba(255,255,255,0.5)
-    );
-    height: 20rem;
-    width: 20rem;
-    position: absolute;
-    border-radius: 50%;
-    z-index: 1;
-
+  background: linear-gradient(to right bottom,
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0.5));
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
 }
 
 .user-img {
   border-radius: 40%;
   width: 100px;
-  height:100px;
+  height: 100px;
   padding: 8px;
-
 }
 
 .link-img, .icon-s {
   border-radius: 40%;
   width: 50px;
-  height:50px;
+  height: 50px;
   padding: 8px;
-
 }
 
 .card-img {
   border-radius: 20%;
   width: 350px;
-  height:200px;
+  height: 200px;
   padding: 8px;
 }
 
-
-.circle1{
+.circle1 {
   top: 5%;
   right: 15%;
   background: red;
-
 }
-.circle2{
 
+.circle2 {
   bottom: 5%;
   left: 10%;
   background: blue;
-
-
 }
+
 .link {
   display: flex;
   flex-direction: column-reverse;
@@ -131,14 +117,13 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient()
   align-items: center;
 }
 
-
-.link h2{
+.link h2 {
   padding: 0rem 1rem;
 }
 
 .pro {
   background: linear-gradient(to right top, #65dfc9, #6cdbeb);
-  border-radius : 1rem;
+  border-radius: 1rem;
   color: white;
   padding: 1rem;
   position: relative;
@@ -153,29 +138,25 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient()
   transform: rotate(-25deg);
 }
 
-.pro h2{
+.pro h2 {
   width: 40%;
   color: white;
   font-weight: 600;
 }
 
 /* Games */
-
 .status {
   margin-bottom: 3rem;
-
 }
-.status input {
-  background: linear-gradient(
-    to bottom right,
-    rgba(255,255,255,0.7),
-    rgba(255,255,255,0.3)
-    );
-    border: none;
-    width: 50%;
-    padding: 0.5rem;
-    border-radius: 2rem;
 
+.status input {
+  background: linear-gradient(to bottom right,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3));
+  border: none;
+  width: 50%;
+  padding: 0.5rem;
+  border-radius: 2rem;
 }
 
 .games {
@@ -184,18 +165,42 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient()
   justify-content: space-evenly;
 }
 
-.card {
+.portfolio-cards {
   display: flex;
-  background: linear-gradient(to left top, rgba(255,255,255,0.8),
-  rgba(255,255,255,0.5));
+  flex-direction: column;
+  background: linear-gradient(to left top, rgba(255, 99, 71, 0.4),
+      rgba(255, 255, 255, 0.5));
   border-radius: 1rem;
   margin: 2rem 0rem;
   padding: 2rem;
-  box-shadow: 6px 6px 20px rgba(122,122,122,0.253);
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.253);
   justify-content: space-evenly;
-
 }
 
+.portfolio-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.card-photo {}
+
+.card {
+  display: flex;
+  background: linear-gradient(to left top, rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.5));
+  border-radius: 1rem;
+  margin: 2rem 0rem;
+  padding: 2rem;
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.253);
+  justify-content: space-evenly;
+}
 
 .progress {
   background: linear-gradient(to right top, #65dfc9, #6cdbeb);
@@ -210,7 +215,33 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient()
   content: "";
   width: 100%;
   height: 100%;
-  background: rgb(236,236,236);
+  background: rgb(236, 236, 236);
   position: absolute;
   left: 90%;
+}
+
+.button {
+  background-color: #4CAF50;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.projectbutt {
+  background-color: rgba(150, 150, 100, 0.2);
+  color: black;
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.253);
+}
+
+.projectbutt:hover {
+  background-color: #4CAF50;
+  color: white;
 }
