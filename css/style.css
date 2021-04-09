@@ -4,8 +4,13 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Poppins';
+  src: url('fonts/Poppins-Regular.ttf') format('Regular');
+}
+
 main {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", Regular;
   min-height: 100vh;
   background: linear-gradient(to right top, #65dfc9, #6cdbeb);
   display: flex;
@@ -16,7 +21,7 @@ main {
 body {
   color: black;
   font-weight: 900;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', Regular;
 }
 
 h1 {
