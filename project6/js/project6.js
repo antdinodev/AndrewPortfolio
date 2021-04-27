@@ -81,10 +81,17 @@ filterOption.addEventListener("click", filterTodo);
 
 //functions
 
+//todo - create an exception that prevents users from adding in new tasks if it is empty
+
 function addTodo(event) {
-  console.log("hello");
   //prevent form from submiting
   event.preventDefault();
+
+  if (todoInput.value == null || todoInput.value == "") {
+    nameError = "Please enter a todo task! Let's get cracking!";
+    alert(nameError);
+    return false;
+  }
 
   //todo div
   const todoDiv = document.createElement("div");
